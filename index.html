@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Bài tập 1: Quản lí tuyển sinh  -->
+        <div class="baiTap1">
+            <h2 class="text-uppercase text-center">Quản lí tuyển sinh</h2>
+            <div class="row text-primary fw-bold">
+                <div class="col-4 text-danger fw-bold">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Điểm chuẩn</label>
+                        <input type="text" class="form-control" name="" id="diemChuan" aria-describedby="helpId"
+                            placeholder="Điểm chuẩn" />
+                    </div>
+
+                </div>
+                <div class="col-4">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Chọn đối tượng</label>
+                        <select class="form-select form-select-lg" name="" id="doiTuong">
+                            <option selected>Đối tượng</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="col-4">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Khu Vực</label>
+                        <select class="form-select form-select-lg" name="" id="khuVuc">
+                            <option selected>Chọn khu vực</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row text-primary fw-bold">
+                <div class="col-4">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Điểm môn thứ 1</label>
+                        <input type="text" class="form-control" name="" id="diemMonThu1" aria-describedby="helpId"
+                            placeholder="Điểm môn thứ 1" />
+                    </div>
+
+                </div>
+                <div class="col-4">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Điểm môn thứ 2</label>
+                        <input type="text" class="form-control" name="" id="diemMonThu2" aria-describedby="helpId"
+                            placeholder="Điểm môn thứ 2" />
+                    </div>
+
+                </div>
+                <div class="col-4">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Điểm môn thứ 3</label>
+                        <input type="text" class="form-control" name="" id="diemMonThu3" aria-describedby="helpId"
+                            placeholder="Điểm môn thứ 3" />
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary mb-3" id="ketQua">Kết quả</button>
+            <p class="bg-danger text-black bg-opacity-75 p-3" id="ketQua1">Kết quả tuyển sinh: </p>
+        </div>
+        <!-- Bài tập 2: Tính tiền điện -->
+        <div class="baiTap2">
+            <h2 class="text-uppercase text-center text-warning mt-3">Tính tiền điện</h2>
+            <div class="mb-3">
+                <label for="" class="form-label text-danger fw-bold">Họ và tên chủ hộ</label>
+                <input type="text" class="form-control w-50" name="" id="hoVaTen" aria-describedby="helpId"
+                    placeholder="Nhập vào họ tên chủ hộ" />
+                <label for="" class="form-label text-danger fw-bold mt-3">Số Kw</label>
+                <input type="text" class="form-control w-50" name="" id="soKw" aria-describedby="helpId"
+                    placeholder="Nhập số Kw" />
+                <button class="btn btn-danger mt-3" id="tinhTien">Tính tiền</button>
+                <p class="bg-primary text-black bg-opacity-75 p-3 mt-3" id="ketQua2">Tiền điện tháng này là: </p>
+
+            </div>
+
+        </div>
+        <!-- BÀI TẬP 3: TÍNH THUẾ THU NHẬP CÁ NHÂN -->
+        <div class="baiTap3 mt-5">
+            <h2 class="text-uppercase text-center text-success mb-3">Tính thuế thu nhập cá nhân</h2>
+            <div class="row mb-3">
+                <div class="col-4">
+                    <label for="" class="form-label text-danger fw-bold">Họ và tên cá nhân</label>
+                    <input type="text" class="form-control" name="" id="hoVaTenCaNhan" aria-describedby="helpId"
+                        placeholder="Nhập vào họ tên" />
+                </div>
+                <div class="col-4">
+                    <label for="" class="form-label text-danger fw-bold">Tổng thu nhập năm</label>
+                    <input type="text" class="form-control" name="" id="tongThuNhapNam" aria-describedby="helpId"
+                        placeholder="Tổng thu nhập năm" />
+                </div>
+                <div class="col-4">
+                    <label for="" class="form-label text-danger fw-bold">Số người phụ thuộc</label>
+                    <input type="text" class="form-control" name="" id="soNguoiPhuThuoc" aria-describedby="helpId"
+                        placeholder="Số người phụ thuộc" />
+                </div>
+            </div>
+            <button class="btn btn-warning mt-3" id="tinhTienThue">Tính tiền thuế</button>
+            <p class="bg-success text-black bg-opacity-75 p-3 mt-3" id="ketQua3">Tiền thuế cá nhân này phải nộp là: </p>
+
+        </div>
+        <!-- BÀI TẬP 4:  TÍNH TIỀN CÁP -->
+        <div class="baiTap4 mt-5">
+            <h2 class="text-uppercase text-center text-secondary mb-3">Tính tiền cáp</h2>
+            <div class="row mb-3">
+                <div class="col-4">
+                    <div class="mb-3">
+                        <label for="loaiKhachHang" class="form-label text-danger fw-bold">Khách hàng</label>
+                        <select class="form-select form-select-lg" id="loaiKhachHang">
+                            <option selected>Chọn loại khách hàng</option>
+                            <option value="nhaDan">Nhà dân</option>
+                            <option value="doanhNghiep">Doanh nghiệp</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <label for="" class="form-label text-danger fw-bold">Mã khách hàng</label>
+                    <input type="text" class="form-control" name="" id="maKhachHang" aria-describedby="helpId"
+                        placeholder="Nhập mã khách hàng" />
+                </div>
+                <div class="col-4">
+                    <label for="soKenhCaoCap" class="form-label text-danger fw-bold">Số kênh cao cấp</label>
+                    <input type="text" class="form-control" id="soKenhCaoCap" aria-describedby="helpId"
+                        placeholder="Số kênh cao cấp" />
+                </div>
+            </div>
+            <div class="" id="soKetNoi" style="display:none;">
+                <label for="soKetNoi" class="form-label text-danger fw-bold">Số kết nối (chỉ cho doanh
+                    nghiệp)</label>
+                <input type="text" class="form-control" id="soKetNoi" aria-describedby="helpId"
+                    placeholder="Số kết nối" />
+            </div>
+            <button class="btn btn-warning mt-3" id="tinhTienCap">Tính tiền cáp</button>
+            <p class="bg-secondary text-black bg-opacity-75 p-3 mt-3" id="ketQua4">Tiền cáp phải trả là: </p>
+        </div>
+    </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
